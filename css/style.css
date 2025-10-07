@@ -182,3 +182,7 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+
+.video {
+  border-radius: 15px;
+}
