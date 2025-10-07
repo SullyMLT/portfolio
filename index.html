@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Sully MILLET</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/appear_card.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <h1 class="logo">Portfolio</h1>
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="#presentation">Présentation</a></li>
+                <li><a href="#experiences">Expériences</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container" id="presentation">
+        <div class="card presentation-card">
+            <div class="presentation-content">
+                <div class="presentation-text">
+                    <h2>Présentation personnelle</h2>
+                    <p>Je me présente Sully MILLET, Je suis actuellement étudiant en Master 2 informatique parcours Technologies de l'Information et Ingénierie du Logiciel par l'Alternance (TIIL-A) à l'Université de Bretagne Occidentale (UBO) à Brest.</p>
+                    <p>Passionné par le développement web ou logiciel, j'ai pu mettre en œuvre mes compétences apprises en cours, acquérir de nouvelles expériences et compétences précieuses pendant mes stages en entreprise.</p>
+                    <p>Je suis également en alternance chez Crédit Mutuel Arkéa en tant qu'alternant développeur full stack.</p>
+                </div>
+                <div class="presentation-photo">
+                    <img src="uploads/images/photo_perso.jpg" alt="Photo de Sully MILLET">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="card" id="experiences">
+            <h2>Expériences Professionnelles</h2>
+            <div style="display: flex; flex-wrap: wrap; gap: 32px; justify-content: space-between;">
+                <div class="experiences-list" id="experiences-list">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="contact-icons">
+            <a href="https://github.com/SullyMLT" target="_blank" aria-label="GitHub">
+                <img src="uploads/logos/icons8-github.svg" alt="GitHub" class="contact-logo">
+            </a>
+            <a href="https://www.linkedin.com/in/sully-millet-53b9b0254/" target="_blank" aria-label="LinkedIn">
+                <img src="uploads/logos/icons8-linkedin.svg" alt="LinkedIn" class="contact-logo">
+            </a>
+        </div>
+        <br>
+        &copy; 2025 Mon Portfolio - Sully MILLET
+    </footer>
+
+    <script src="data/experiences/data_index_experiences.js"></script>
+    <script src="js/index_experiences.js"></script>
+</body>
+</html>
