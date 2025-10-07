@@ -56,6 +56,27 @@ header h1 {
 .navbar .nav-links a:hover {
   color: #0051ff;
 }
+.navbar .burger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+.navbar .burger div {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  transition: all 0.3s;
+}
+.burger.toggle div:nth-child(1) {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+.burger.toggle div:nth-child(2) {
+  opacity: 0;
+}
+.burger.toggle div:nth-child(3) {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
 .container {
   max-width: 1100px;
   margin: 32px auto;
@@ -142,6 +163,7 @@ header h1 {
   flex-direction: column;
   justify-content: space-between;
   height: 468px;
+  width: 95%;
 }
 .experienceCard:hover {
   transform: translateY(-6px);
@@ -168,7 +190,38 @@ footer {
 .contact-logo:hover {
   transform: scale(1.2);
 }
+.video {
+  border-radius: 15px;
+}
+@media (max-width: 1024px) {
+  .experiences-list {
+    grid-template-columns: 1fr;
+  }
+}
 @media (max-width: 768px) {
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .navbar .nav-links {
+    position: absolute;
+    top: 75px;
+    right: 0;
+    background-color: rgba(30, 60, 114, 0.95);
+    flex-direction: column;
+    width: 100%;
+    display: none;
+    text-align: center;
+    padding: 16px 0;
+    gap: 16px;
+  }
+  .navbar .nav-links.active {
+    display: flex;
+  }
+  .navbar .burger {
+    display: flex;
+  }
   .presentation-content {
     flex-direction: column-reverse;
     align-items: center;
@@ -180,9 +233,14 @@ footer {
   }
   .experiences-list {
     grid-template-columns: 1fr;
+    gap: 24px;
   }
-}
-
-.video {
-  border-radius: 15px;
+  .experienceCard {
+    width: 90%;
+    height: auto;
+  }
+  .experiences-image {
+    width: 100%;
+    height: auto;
+  }
 }
